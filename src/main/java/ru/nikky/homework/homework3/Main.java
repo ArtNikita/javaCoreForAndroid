@@ -52,13 +52,13 @@ public class Main {
         System.out.print("Type here:");
     }
 
-    private static void loadingImitation() {
-        int time = random.nextInt(8) + 2;
+    public static void loadingImitation() {
+        int time = random.nextInt(5) + 2;
         System.out.print("Loading");
         for (int i = 0; i < time; i++) {
             System.out.print(".");
             try {
-                Thread.sleep(700);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
